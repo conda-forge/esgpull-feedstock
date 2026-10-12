@@ -1,14 +1,15 @@
 context:
   name: esgpull
-  version: "0.9.6"
-
+  version: "0.10.0"
+  python_min: "3.11"
+  
 package:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/e/esgpull/esgpull-${{ version }}.tar.gz
-  sha256: 1c11a02f5f03e4b411e4a63d756b414def936f839fdfe929d36d5280518d28e7
+  sha256: c62f4fba187020fb16eb8808fa83abc0aa17dcb31e832be1e3b087a6fff0ba30
 
 build:
   noarch: python
@@ -45,6 +46,7 @@ requirements:
     - packaging >=25.0
     - pydantic >=2.11.7
     - pydantic-settings >=2.10.1
+    - pystac-client >=0.9.0
 
 tests:
   - python:
@@ -69,3 +71,4 @@ about:
 extra:
   recipe-maintainers:
     - cofinoa
+    - AtefBN
