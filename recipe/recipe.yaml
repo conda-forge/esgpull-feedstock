@@ -1,15 +1,14 @@
 context:
   name: esgpull
-  version: "0.10.0"
+  version: "0.10.1"
   python_min: "3.11"
-  
 package:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/e/esgpull/esgpull-${{ version }}.tar.gz
-  sha256: c62f4fba187020fb16eb8808fa83abc0aa17dcb31e832be1e3b087a6fff0ba30
+  sha256: 8e17e74a32847bb097ed5d46590e7997774b85f273163cb3d317023fb68a2eed
 
 build:
   noarch: python
